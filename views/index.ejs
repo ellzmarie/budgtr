@@ -12,13 +12,20 @@
 </head>
 <body>
     <div class="body-overlay">
-
     <h1>Budgtr All</h1>
     <table>
+        
         <% for(let i = 0; i < allBudget.length; i++) { %>
-            <li><a href="/budget/<%=i%>"><%= allBudget[i].name %></a></li>
-        <% } %>
+        <tr>
+            <td><%= allBudget[i].date %></td>
+            <td><a href="/budget/<%=i%>"><%= allBudget[i].name %></a></td>
+            <td><%= allBudget[i].amount %></td>        
+        </tr>
+        <% } %> 
     </table>
+
+
+
 
     </div>
 
