@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgtr</title>
+
+    <link rel="stylesheet" href="https://discord.com/channels/1019847352812568596/1019848098333347850/1031790819008581662" />
+    <link rel="stylesheet" href="https://discord.com/channels/1019847352812568596/1019848098333347850/1031790819008581662" />
+
+</head>
+<body>
+    <div class="body-overlay">
+
+    <h1>Budgtr All</h1>
+    <table>
+        <% for(let i = 0; i < allBudget.length; i++) { %>
+            <li><a href="/budget/<%=i%>"><%= allBudget[i].name %></a></li>
+        <% } %>
+    </table>
+
+    </div>
+
+</body>
+</html>
