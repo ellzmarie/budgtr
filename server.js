@@ -27,6 +27,14 @@ app.get('/budget', (req, res) => {
     })
 })
 
+// New
+// GET /budgets/new
+app.get('/budget/new', (req, res) => {
+    res.render('new.ejs', {
+        title: 'new'
+    })
+})
+
 // Show
 // GET /budgets/:index
 app.get('/budget/:indexBudget', (req, res) => {
@@ -36,16 +44,12 @@ app.get('/budget/:indexBudget', (req, res) => {
     })
 })
 
-// New
-// GET /budgets/new
-app.get('/budget/new', (req, res) => {
-    res.render('new.ejs', {
-        title: 'new'
-    })
-})
 
 // POST /budgets
-
+app.post('/budget', (req, res) => {
+    budget.push(req.body)
+    res.redirect('/budget')
+})
 
 // =======================================
 //              LISTENER
