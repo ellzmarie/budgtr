@@ -30,17 +30,20 @@ app.get('/budget', (req, res) => {
 // Show
 // GET /budgets/:index
 app.get('budget/:indexBudget', (req, res) => {
-    res.send(budget[req.params.indexBudget])
+    res.render('show.ejs', {
+        allBudget: budget[req.params.indexBudget],
+        title: 'budget'    
+    })
 })
-
 
 // New
 // GET /budgets/new
 app.get('/budget/new', (req, res) => {
-    res.render('new.ejs')
+    res.render('new.ejs', {
+        title: 'new'
+    })
 })
 
-// Create
 // POST /budgets
 
 

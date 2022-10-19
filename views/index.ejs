@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budgtr</title>
 
-    <link rel="stylesheet" href="https://discord.com/channels/1019847352812568596/1019848098333347850/1031790819008581662" />
-    <link rel="stylesheet" href="https://discord.com/channels/1019847352812568596/1019848098333347850/1031790819008581662" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
 
 </head>
 <body>
-    <div class="body-overlay">
+    <div class="container">
     <h1>Budgtr All</h1>
+    
     <table>
-        
         <% for(let i = 0; i < allBudget.length; i++) { %>
         <tr>
             <td><%= allBudget[i].date %></td>
@@ -23,9 +23,6 @@
         </tr>
         <% } %> 
     </table>
-
-
-
 
     </div>
 

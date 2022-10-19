@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgtr</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+
+</head>
+<body>
+
+    <div class="container">
+        <h1><%= allBudget.name %></h1>
+        <a href="/budget" class="back-btn">BACK</a>
+
+        <ul>
+            <h2>date</h2>
+            <li><%= allBudget.date %></li>
+            <h2>name</h2>
+            <li><%= allBudget.name %></li>
+            <h2>from</h2>
+            <li><%= allBudget.from %></li>
+            <h2>amount</h2>
+            <li><%= allBudget.amount %></li>
+            <h2>tags</h2>
+            <li><%= allBudget.tags %></li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>
