@@ -29,7 +29,7 @@ app.get('/budget', (req, res) => {
 
 // Show
 // GET /budgets/:index
-app.get('budget/:indexBudget', (req, res) => {
+app.get('/budget/:indexBudget', (req, res) => {
     res.render('show.ejs', {
         allBudget: budget[req.params.indexBudget],
         title: 'budget'    
