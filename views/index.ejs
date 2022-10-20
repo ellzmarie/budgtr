@@ -12,8 +12,23 @@
 </head>
 <body>
     <div class="container">
-    <h1>Budgtr All</h1>
-    
+        <h1>Budgtr All</h1>
+        <% let bankAccount = allBudget.reduce((newAmount, allBudget) => {return newAmount + parseInt(allBudget.amount)}, 0) %>
+
+    <% if (bankAccount < 0) { %>
+        <style> 
+            Body {
+                background-color: red
+                }
+        </style>
+    <% } else if (bankAccount > 1000) { %>
+        <style>
+            Body {
+                background-color: blue
+                }
+        </style> 
+    <% } %>
+
     <table>
         <% for(let i = 0; i < allBudget.length; i++) { %>
         <tr>
@@ -23,8 +38,9 @@
         </tr>
         <% } %> 
     </table>
-    <a href="/budget/new" class="add-btn">Add a New Item</a>
+    <button><a href="/budget/new" class="add-btn">Add a New Item</a></button>
     </div>
+    
 
 </body>
 </html>

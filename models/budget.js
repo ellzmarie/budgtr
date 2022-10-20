@@ -71,3 +71,5 @@ module.exports = [
     },
   ];
 
+  // let bankAccount = allBudget.reduce((newAmount, allBudget) => {return newAmount + parseInt(allBudget.amount)}, 0)
+
