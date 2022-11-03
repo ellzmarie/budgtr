@@ -17,18 +17,18 @@
 
     <% if (bankAccount <= 0) { %>
         <style> 
-        Body {
-            background-color: red
+        .balance {
+            color: red
             }
         </style>
     <% } else if (bankAccount > 1000) { %>
         <style>
-        Body {
-            background-color: green
+        .balance {
+            color: green
             }
         </style> 
     <% } %>
-
+ <h1 class="balance"><%=bankAccount%></h1>
     <table>
         <% for(let i = 0; i < allBudget.length; i++) { %>
         <tr>
